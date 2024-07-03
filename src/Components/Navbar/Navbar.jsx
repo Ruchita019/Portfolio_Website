@@ -15,10 +15,10 @@ const Navbar = () => {
   return (
     <nav
       className="mb-20 flex items-center justify-between py-6">
-      <div className="container px-4 mx-auto relative text-sm">
+      <div className="container px-24 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <img className="h-14 w-15" src={logo} alt="logo" />
+            <img className="h-20 w-26" src={logo} alt="logo" />
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             <li className="nav-elements"><AnchorLink className="anchor-link" offset={50} href="#home"><p onClick={()=>setMenu("home")}>Home</p></AnchorLink></li>

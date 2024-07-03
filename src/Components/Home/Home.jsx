@@ -26,9 +26,9 @@ const Home = () => {
         <span>Hi! I am Ruchita,</span> Machine Learning Engineer
       </motion.h1>
 
-      <motion.h4 variants={container(0.8)} initial="hidden" animate="visible">
+      <motion.h2 variants={container(0.8)} initial="hidden" animate="visible">
         Connect with Me
-      </motion.h4>
+      </motion.h2>
       <motion.div
         className="social-icons"
         variants={container(1)}

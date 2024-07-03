@@ -8,7 +8,7 @@ import './About_me.css'
 const About_me = () => {
   return (
     <div id="about" className="border-b border-neutral-900 pb-4">
-      <h2 className="my-20 text-center text-4xl">
+      <h2 className="my-32 text-center text-4xl">
         <span className="text-neutral-500">About</span>
         Me
       </h2>
