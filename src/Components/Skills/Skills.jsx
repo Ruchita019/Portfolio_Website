@@ -42,7 +42,7 @@ const skills = () => {
       whileInView={{opacity:1, y:0}}
       initial = {{opacity:0, y:-50}}
       transition={{duration: 1.5}}
-      className="mt-40 mb-20 text-center text-3xl">Technologies</motion.h1>
+      className="my-20 text-center text-4xl">Technologies</motion.h1>
       <motion.div 
       whileInView={{opacity:1, x:0}}
       initial = {{opacity:0, x:-100}}
