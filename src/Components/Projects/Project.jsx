@@ -37,7 +37,15 @@ const Project = () => {
               transition={{ duration: 1.5 }}
               className="w-full max-w-xl lg:w-2/3"
             >
-              <h5 className="mb-2 font-semibold">{project.title}</h5>
+              <h5 className="mb-2 font-semibold">
+                {project.title}
+                <a
+                  href={project.link}
+                  className="ml-2 w-11 rounded bg-neutral-900 px-2 py-1 text-xs font-medium text-neutral-400"
+                >
+                  LINK
+                </a>
+              </h5>
               <p className="mb-4 text-neutral-400 text-sm">
                 {project.description}
               </p>

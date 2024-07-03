@@ -1,5 +1,6 @@
 import React from "react";
 import Profile from "../../assets/home.jpg";
+import {ABOUT_TEXT} from '../../constants/index'
 import { motion } from "framer-motion";
 
 const About_me = () => {
@@ -26,12 +27,7 @@ const About_me = () => {
         className="w-full lg:w-2/3 ">
           <div className="flex justify-center lg:justify-start">
             <p className="m-20 max-w-xl py-6">
-              I am a dedicated and versatile Machine Learning Engineer with the
-              passion for creating solution that is helpful in real-time
-              situations. With Project-based experience I have worked with
-              variety of Technologies including Python, Scikit-learn,
-              Tensorflow, Langchain and Computer Vision. Currently I am in Final
-              year of Bachelor's of Technology from NIT Kurukshetra.
+              {ABOUT_TEXT}
             </p>
           </div>
         </motion.div>
