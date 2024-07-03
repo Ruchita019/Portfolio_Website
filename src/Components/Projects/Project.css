@@ -1,20 +1,7 @@
-.container{
-    width:80%;
-    margin: 0 auto;
-    /* height: 50vh; */
+@media(max-width:768px){
+    #project{
+        margin: 30px;
+        align-items: start;
+
+    }
 }
-.swiper{
-    overflow: visible !important;
-}
-.slider{
-    margin-top: 3rem;
-    width: 100%;
-}
-.swiper-slide img {
-    width: 19rem;
-    height: 15rem;
-    object-fit: cover;
-    filter: drop-shadow(1px 1px 5px #430A5D);
-    border-radius: 19px;
-  }
-  

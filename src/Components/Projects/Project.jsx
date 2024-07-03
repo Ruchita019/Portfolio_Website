@@ -1,7 +1,7 @@
 import React from "react";
 import { PROJECTS } from "../../constants/index";
 import { motion } from "framer-motion";
-
+import './Project.css'
 const Project = () => {
   return (
     <div id="project" className="border-b border-neutral-800 pb-4">

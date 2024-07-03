@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
+import Resume from '../../assets/RUCHITA_RESUME.pdf'
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false)
@@ -28,7 +28,7 @@ const Navbar = () => {
             <li className="nav-elements"><AnchorLink className="anchor-link" offset={50} href="#contact"><p onClick={()=>setMenu("home")}>Contact Me</p></AnchorLink></li>
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <a href='../../assets/RUCHITA_RESUME_AI.pdf' download className="custom-button px-7 py-2 rounded-full text-sm cursor-pointer">
+            <a href={Resume} download className="custom-button px-7 py-2 rounded-full text-sm cursor-pointer">
               Resume
             </a>
           </div>
@@ -42,12 +42,12 @@ const Navbar = () => {
           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12
           flex flex-col justify-center items-center lg:hidden">
             <ul>
-              <li className="py-4">Home</li>
-              <li className="py-4">About me</li>
-              <li className="py-4">Skills</li>
-              <li className="py-4">Projects</li>
-              <li className="py-4">Contact me</li>
-              <li className="py-4">Resume</li>
+              <li className="py-4"><AnchorLink className="anchor-link" offset={50} href="#home"><p onClick={()=>setMenu("home")}>Home</p></AnchorLink></li>
+              <li className="py-4"><AnchorLink className="anchor-link" offset={50} href="#about"><p onClick={()=>setMenu("home")}>About Me</p></AnchorLink></li>
+              <li className="py-4"><AnchorLink className="anchor-link" offset={50} href="#skills"><p onClick={()=>setMenu("home")}>Technologies</p></AnchorLink></li>
+              <li className="py-4"><AnchorLink className="anchor-link" offset={50} href="#project"><p onClick={()=>setMenu("home")}>Projects</p></AnchorLink></li>
+              <li className="py-4"><AnchorLink className="anchor-link" offset={50} href="#contact"><p onClick={()=>setMenu("home")}>Contact Me</p></AnchorLink></li>
+              <li className="py-4"><a href={Resume} download >Resume</a></li>
             </ul>
           </div>
         )}

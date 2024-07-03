@@ -1,7 +1,9 @@
 import React from "react";
-import Profile from "../../assets/home.jpg";
+import Profile from "../../assets/about.jpg";
 import {ABOUT_TEXT} from '../../constants/index'
 import { motion } from "framer-motion";
+import './About_me.css'
+
 
 const About_me = () => {
   return (
@@ -17,7 +19,7 @@ const About_me = () => {
         transition={{duration: 0.7}}
         className="w-full lg:w-1/3 lg:p-5">
           <div className="flex items-center justify-center">
-            <img className="rounded-2xl" src={Profile} alt="about" />
+            <img id='image' className="rounded-2xl" src={Profile} alt="about" />
           </div>
         </motion.div>
         <motion.div 
