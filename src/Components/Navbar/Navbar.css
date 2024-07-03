@@ -1,0 +1,11 @@
+.nav-elements{
+    transition: 0.5s;
+}
+.nav-elements:hover{
+    transform: scale(1.15);
+}
+
+.custom-button {
+    @apply bg-gradient-to-r from-purple-400 to-purple-500;
+    background: linear-gradient(267deg, #E384FF 0.36%, #865DFF);
+}
